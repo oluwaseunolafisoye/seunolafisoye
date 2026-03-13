@@ -1,8 +1,24 @@
 export const PROJECTS = [
   {
+    id: "door",
+    title: "doorway",
+    isPersonal: true,
+    clientLogo: "/doorway_logo.svg",
+    category: "Frontend, Backend",
+    projectImage: "/doorway_app.png",
+    year: "2026",
+    description: `An AI-powered CV optimization tool that tailors your resume to a 
+            specific job description. It analyzes the job posting, extracts key skills 
+            and keywords, and rewrites your CV to align with what employers are looking 
+            for — maximizing your chances of passing ATS filters and landing an interview.`,
+    className: "md:col-span-1",
+    inProgress: false,
+    href: "https://door-three-neon.vercel.app/",
+  },
+  {
     id: "portfolio",
     title: "'Folio 25",
-    client: "Myself",
+    isPersonal: true,
     clientLogo: "/my_logo.svg",
     category: "Design, Frontend Engineering",
     projectImage: "/folio.png",
@@ -50,26 +66,27 @@ export const PROJECTS = [
     inProgress: false,
     href: "https://app.kairosng.com",
   },
-  {
-    id: "desk",
-    title: "Desk",
-    client: "Desk Inc.",
-    clientLogo: "/desk_logo.svg",
-    category:
-      "Backend Engineering, Frontend Architecture, Frontend Engineering, Documentation",
-    projectImage:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
-    year: "2025",
-    description: `An AI powered customer support platform that leverages natural language 
-            processing to provide instant and accurate responses to customer inquiries.
-            It contains two main products - DeskAI and DeskBot. DeskAI is an AI-powered
-            customer support platform that uses natural language processing to provide instant
-            and accurate responses to customer inquiries. DeskBot is an AI chatbot that can be
-            integrated into websites and messaging platforms to provide 24/7 customer support.`,
-    className: "md:col-span-1",
-    inProgress: true,
-    href: "https://app.deskinc.com",
-  },
+
+  // {
+  //   id: "desk",
+  //   title: "Desk",
+  //   client: "Desk Inc.",
+  //   clientLogo: "/desk_logo.svg",
+  //   category:
+  //     "Backend Engineering, Frontend Architecture, Frontend Engineering, Documentation",
+  //   projectImage:
+  //     "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+  //   year: "2025",
+  //   description: `An AI powered customer support platform that leverages natural language
+  //           processing to provide instant and accurate responses to customer inquiries.
+  //           It contains two main products - DeskAI and DeskBot. DeskAI is an AI-powered
+  //           customer support platform that uses natural language processing to provide instant
+  //           and accurate responses to customer inquiries. DeskBot is an AI chatbot that can be
+  //           integrated into websites and messaging platforms to provide 24/7 customer support.`,
+  //   className: "md:col-span-1",
+  //   inProgress: true,
+  //   href: "https://app.deskinc.com",
+  // },
   // {
   //     title: "Gamestats",
   //     client: "ProGaming",
@@ -177,7 +194,7 @@ export const EXPERIENCES = [
   {
     title: "Software Engineer, Fullstack",
     company: "stack8s, London, United Kingdom",
-    period: "January 2026 - Present",
+    period: "December 2026 - February 2026",
     description:
       "Building agentic AI workflows that enables businesses to create and deploy, cloud infrastructure (Docker & Kubernetes) and AI models for different use cases seamlessly.",
   },
