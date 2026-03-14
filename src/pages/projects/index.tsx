@@ -85,28 +85,34 @@ export const Projects = () => {
 
                 {!project.isPersonal && (
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-muted-foreground font-sans uppercase">
-                      For
-                    </span>
-                    <Avatar className="size-10 border border-secondary-foreground/10">
-                      <AvatarImage
-                        src={project.clientLogo}
-                        alt={project.client}
-                        className={cn(
-                          project.clientLogo.includes("desk_logo") ? "p-1" : "",
-                          project.clientLogo.includes("my_logo") ||
-                            project.clientLogo.includes("desk_logo")
-                            ? "dark:invert"
-                            : "",
-                        )}
-                      />
+                    {project.clientLogo && (
+                      <>
+                        <span className="text-xs text-muted-foreground font-sans uppercase">
+                          For
+                        </span>
+                        <Avatar className="size-10 border border-secondary-foreground/10">
+                          <AvatarImage
+                            src={project.clientLogo}
+                            alt={project.client}
+                            className={cn(
+                              project.clientLogo.includes("desk_logo")
+                                ? "p-1"
+                                : "",
+                              project.clientLogo.includes("my_logo") ||
+                                project.clientLogo.includes("desk_logo")
+                                ? "dark:invert"
+                                : "",
+                            )}
+                          />
 
-                      {project?.client && (
-                        <AvatarFallback className="text-[10px] text-primary font-sans">
-                          {project.client.substring(0, 2).toUpperCase()}
-                        </AvatarFallback>
-                      )}
-                    </Avatar>
+                          {project?.client && (
+                            <AvatarFallback className="text-[10px] text-primary font-sans">
+                              {project.client.substring(0, 2).toUpperCase()}
+                            </AvatarFallback>
+                          )}
+                        </Avatar>
+                      </>
+                    )}
                   </div>
                 )}
               </div>

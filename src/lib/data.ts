@@ -1,5 +1,18 @@
 export const PROJECTS = [
   {
+    id: "window",
+    title: "window",
+    isPersonal: true,
+    category: "Fullstack Engineering",
+    projectImage: "/window_app.png",
+    year: "2026",
+    description: `An AI chatbot that create a mind map of the branches of conversation 
+            you are having so you can keep track of what you are learning over time.`,
+    className: "md:col-span-1",
+    inProgress: false,
+    href: "https://window-topaz.vercel.app/",
+  },
+  {
     id: "door",
     title: "doorway",
     isPersonal: true,
@@ -19,8 +32,6 @@ export const PROJECTS = [
     id: "portfolio",
     title: "'Folio 25",
     isPersonal: true,
-    clientLogo: "/my_logo.svg",
-    category: "Design, Frontend Engineering",
     projectImage: "/folio.png",
     year: "2025",
     description: `A personal portfolio website to showcase my skills,
@@ -113,19 +124,7 @@ export const PROJECTS = [
   //     className: "md:col-span-1",
   //     inProgress: false,
   // },
-  // {
-  //     title: "Brutal",
-  //     client: "Artistry",
-  //     clientLogo: "https://cdn.simpleicons.org/ericsson/0082F0",
-  //     category: "Web Design",
-  //     projectImage:
-  //         "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670&auto=format&fit=crop",
-  //     year: "2023",
-  //     description:
-  //         "Experimental brutalist web design portfolio for a creative agency.",
-  //     className: "md:col-span-2",
-  //     inProgress: false,
-  // },
+
   // {
   //     title: "Flow",
   //     client: "Focus",
